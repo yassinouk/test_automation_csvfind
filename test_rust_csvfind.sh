@@ -20,6 +20,7 @@ if cmp -s expected_output.txt output1.txt; then
 else
   echo "Test failed: Output does not match expected result for csvfind.rs "
   cat output1.txt
+  exit 1  # Mark the script as failed
 fi
 
 # Test csvfind_v2.rs
@@ -33,4 +34,5 @@ if cmp -s expected_output.txt output2.txt; then
 else
   echo "Test failed: Output does not match expected result for csvfind_v2.rs "
   cat output2.txt
+  exit 1  # Mark the script as failed
 fi
