@@ -13,5 +13,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Build and run rust csvfind
+      - name: testing rust csvfind versions
         run: ./test_rust_csvfind.sh
